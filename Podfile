@@ -2,7 +2,7 @@
 platform :ios, '13.0'
 use_frameworks!
 inhibit_all_warnings!
-workspace 'KodeText'
+workspace 'KodeTest'
 
 def networking
   pod 'Alamofire', '~> 5.0.0'

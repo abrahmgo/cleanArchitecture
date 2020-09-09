@@ -7,10 +7,6 @@
       <FileRef
          location = "group:Liverpool/Liverpool.xcodeproj">
       </FileRef>
-      <Group
-         location = "group:Liverpool"
-         name = "Liverpool">
-      </Group>
    </Group>
    <Group
       location = "group:Data"
@@ -65,4 +61,7 @@
          location = "group:Utils/Utils.xcodeproj">
       </FileRef>
    </Group>
+   <FileRef
+      location = "group:Pods/Pods.xcodeproj">
+   </FileRef>
 </Workspace>

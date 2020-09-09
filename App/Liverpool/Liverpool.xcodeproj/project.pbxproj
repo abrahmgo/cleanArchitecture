@@ -3,30 +3,59 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		B66C40B625098C7D003DD419 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B66C40B525098C7D003DD419 /* AppDelegate.swift */; };
-		B66C40B825098C7D003DD419 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B66C40B725098C7D003DD419 /* SceneDelegate.swift */; };
-		B66C40BA25098C7D003DD419 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B66C40B925098C7D003DD419 /* ViewController.swift */; };
-		B66C40BD25098C7D003DD419 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B66C40BB25098C7D003DD419 /* Main.storyboard */; };
 		B66C40BF25098C7E003DD419 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B66C40BE25098C7E003DD419 /* Assets.xcassets */; };
 		B66C40C225098C7E003DD419 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B66C40C025098C7E003DD419 /* LaunchScreen.storyboard */; };
+		B6A2C6CA2509965F00F6FB06 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6A2C6C92509965F00F6FB06 /* AppCoordinator.swift */; };
+		B6A2C6CF2509970000F6FB06 /* Utils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6A2C6CE2509970000F6FB06 /* Utils.framework */; };
+		B6A2C6D02509970000F6FB06 /* Utils.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B6A2C6CE2509970000F6FB06 /* Utils.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B6A2C6D6250997BD00F6FB06 /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6A2C6D4250997BD00F6FB06 /* SplashViewController.swift */; };
+		B6A2C6D7250997BD00F6FB06 /* SplashViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B6A2C6D5250997BD00F6FB06 /* SplashViewController.xib */; };
+		B6A2C6D9250997D800F6FB06 /* SplashCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6A2C6D8250997D800F6FB06 /* SplashCoordinator.swift */; };
+		B6A2C6DB2509984E00F6FB06 /* SplashFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6A2C6DA2509984E00F6FB06 /* SplashFactory.swift */; };
+		B6A2C6DD2509988100F6FB06 /* SplashViewModel + Dependencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6A2C6DC2509988100F6FB06 /* SplashViewModel + Dependencies.swift */; };
+		B6A2C6DF250998AD00F6FB06 /* SplashViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6A2C6DE250998AD00F6FB06 /* SplashViewModel.swift */; };
+		B6A2C6F625099C7D00F6FB06 /* APIConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6A2C6F525099C7D00F6FB06 /* APIConfig.swift */; };
+		B6A2C6F825099CB000F6FB06 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6A2C6F725099CB000F6FB06 /* API.swift */; };
 		E25DD081F386CC481A00652C /* Pods_Liverpool.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E8B807490A526511EFCA68F5 /* Pods_Liverpool.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		B6A2C6D12509970000F6FB06 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				B6A2C6D02509970000F6FB06 /* Utils.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		3281F92C35459704C83E8632 /* Pods-Liverpool.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Liverpool.release.xcconfig"; path = "Target Support Files/Pods-Liverpool/Pods-Liverpool.release.xcconfig"; sourceTree = "<group>"; };
 		5935EB63508061AEE7FF0EFB /* Pods-Liverpool.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Liverpool.debug.xcconfig"; path = "Target Support Files/Pods-Liverpool/Pods-Liverpool.debug.xcconfig"; sourceTree = "<group>"; };
 		B66C40B225098C7D003DD419 /* Liverpool.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Liverpool.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B66C40B525098C7D003DD419 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		B66C40B725098C7D003DD419 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		B66C40B925098C7D003DD419 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		B66C40BC25098C7D003DD419 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B66C40BE25098C7E003DD419 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B66C40C125098C7E003DD419 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B66C40C325098C7E003DD419 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B6A2C6C92509965F00F6FB06 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		B6A2C6CE2509970000F6FB06 /* Utils.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Utils.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B6A2C6D4250997BD00F6FB06 /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
+		B6A2C6D5250997BD00F6FB06 /* SplashViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SplashViewController.xib; sourceTree = "<group>"; };
+		B6A2C6D8250997D800F6FB06 /* SplashCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashCoordinator.swift; sourceTree = "<group>"; };
+		B6A2C6DA2509984E00F6FB06 /* SplashFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashFactory.swift; sourceTree = "<group>"; };
+		B6A2C6DC2509988100F6FB06 /* SplashViewModel + Dependencies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SplashViewModel + Dependencies.swift"; sourceTree = "<group>"; };
+		B6A2C6DE250998AD00F6FB06 /* SplashViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewModel.swift; sourceTree = "<group>"; };
+		B6A2C6F525099C7D00F6FB06 /* APIConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIConfig.swift; sourceTree = "<group>"; };
+		B6A2C6F725099CB000F6FB06 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
 		E8B807490A526511EFCA68F5 /* Pods_Liverpool.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Liverpool.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -35,6 +64,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B6A2C6CF2509970000F6FB06 /* Utils.framework in Frameworks */,
 				E25DD081F386CC481A00652C /* Pods_Liverpool.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -74,19 +104,74 @@
 			isa = PBXGroup;
 			children = (
 				B66C40B525098C7D003DD419 /* AppDelegate.swift */,
-				B66C40B725098C7D003DD419 /* SceneDelegate.swift */,
-				B66C40B925098C7D003DD419 /* ViewController.swift */,
-				B66C40BB25098C7D003DD419 /* Main.storyboard */,
-				B66C40BE25098C7E003DD419 /* Assets.xcassets */,
 				B66C40C025098C7E003DD419 /* LaunchScreen.storyboard */,
 				B66C40C325098C7E003DD419 /* Info.plist */,
+				B6A2C6F425099C6A00F6FB06 /* Config */,
+				B6A2C6C72509961C00F6FB06 /* Resources */,
+				B6A2C6C6250995D000F6FB06 /* Scenes */,
 			);
 			path = Liverpool;
+			sourceTree = "<group>";
+		};
+		B6A2C6C6250995D000F6FB06 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				B6A2C6D22509978800F6FB06 /* Common */,
+				B6A2C6C82509964F00F6FB06 /* Base */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		B6A2C6C72509961C00F6FB06 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				B66C40BE25098C7E003DD419 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		B6A2C6C82509964F00F6FB06 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				B6A2C6C92509965F00F6FB06 /* AppCoordinator.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		B6A2C6D22509978800F6FB06 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				B6A2C6D3250997B300F6FB06 /* Splash */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		B6A2C6D3250997B300F6FB06 /* Splash */ = {
+			isa = PBXGroup;
+			children = (
+				B6A2C6D4250997BD00F6FB06 /* SplashViewController.swift */,
+				B6A2C6D8250997D800F6FB06 /* SplashCoordinator.swift */,
+				B6A2C6DC2509988100F6FB06 /* SplashViewModel + Dependencies.swift */,
+				B6A2C6DA2509984E00F6FB06 /* SplashFactory.swift */,
+				B6A2C6DE250998AD00F6FB06 /* SplashViewModel.swift */,
+				B6A2C6D5250997BD00F6FB06 /* SplashViewController.xib */,
+			);
+			path = Splash;
+			sourceTree = "<group>";
+		};
+		B6A2C6F425099C6A00F6FB06 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				B6A2C6F525099C7D00F6FB06 /* APIConfig.swift */,
+				B6A2C6F725099CB000F6FB06 /* API.swift */,
+			);
+			path = Config;
 			sourceTree = "<group>";
 		};
 		B7F6D9CBEB61A80C5C547C3C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				B6A2C6CE2509970000F6FB06 /* Utils.framework */,
 				E8B807490A526511EFCA68F5 /* Pods_Liverpool.framework */,
 			);
 			name = Frameworks;
@@ -104,6 +189,7 @@
 				B66C40AF25098C7D003DD419 /* Frameworks */,
 				B66C40B025098C7D003DD419 /* Resources */,
 				ACFD6836264537DCFEC64464 /* [CP] Embed Pods Frameworks */,
+				B6A2C6D12509970000F6FB06 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -153,8 +239,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				B66C40C225098C7E003DD419 /* LaunchScreen.storyboard in Resources */,
+				B6A2C6D7250997BD00F6FB06 /* SplashViewController.xib in Resources */,
 				B66C40BF25098C7E003DD419 /* Assets.xcassets in Resources */,
-				B66C40BD25098C7D003DD419 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -207,23 +293,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B66C40BA25098C7D003DD419 /* ViewController.swift in Sources */,
+				B6A2C6D6250997BD00F6FB06 /* SplashViewController.swift in Sources */,
+				B6A2C6D9250997D800F6FB06 /* SplashCoordinator.swift in Sources */,
+				B6A2C6F625099C7D00F6FB06 /* APIConfig.swift in Sources */,
+				B6A2C6DD2509988100F6FB06 /* SplashViewModel + Dependencies.swift in Sources */,
+				B6A2C6DF250998AD00F6FB06 /* SplashViewModel.swift in Sources */,
+				B6A2C6DB2509984E00F6FB06 /* SplashFactory.swift in Sources */,
+				B6A2C6CA2509965F00F6FB06 /* AppCoordinator.swift in Sources */,
+				B6A2C6F825099CB000F6FB06 /* API.swift in Sources */,
 				B66C40B625098C7D003DD419 /* AppDelegate.swift in Sources */,
-				B66C40B825098C7D003DD419 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		B66C40BB25098C7D003DD419 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				B66C40BC25098C7D003DD419 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		B66C40C025098C7E003DD419 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -356,6 +440,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = Liverpool/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -374,6 +459,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = Liverpool/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

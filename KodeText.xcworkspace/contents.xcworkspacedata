@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <FileRef
+      location = "group:App/Liverpool/Liverpool.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Common/Utils/Utils.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Data/Core/NetworkCore/NetworkCore.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Data/Core/ShareCore/ShareCore.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Data/Gateways/CoreDataSource/CoreDataSource.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Domain/UseCases/CoreUseCases/CoreUseCases.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Pods/Pods.xcodeproj">
+   </FileRef>
+</Workspace>

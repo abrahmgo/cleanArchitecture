@@ -8,9 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		B66C404925098B53003DD419 /* NetworkCore.h in Headers */ = {isa = PBXBuildFile; fileRef = B66C404725098B53003DD419 /* NetworkCore.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F954718D2A4F94AF96B41F0D /* Pods_NetworkCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B9EA8E292A2CD489CEF1C03 /* Pods_NetworkCore.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		045A23EFF30B212B7004D1B8 /* Pods-NetworkCore.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NetworkCore.debug.xcconfig"; path = "Target Support Files/Pods-NetworkCore/Pods-NetworkCore.debug.xcconfig"; sourceTree = "<group>"; };
+		1250D88638CB5EE8BF8174BB /* Pods-NetworkCore.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NetworkCore.release.xcconfig"; path = "Target Support Files/Pods-NetworkCore/Pods-NetworkCore.release.xcconfig"; sourceTree = "<group>"; };
+		8B9EA8E292A2CD489CEF1C03 /* Pods_NetworkCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NetworkCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B66C404425098B53003DD419 /* NetworkCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NetworkCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B66C404725098B53003DD419 /* NetworkCore.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NetworkCore.h; sourceTree = "<group>"; };
 		B66C404825098B53003DD419 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -21,17 +25,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F954718D2A4F94AF96B41F0D /* Pods_NetworkCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0E07C62AD467B79572DAC613 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8B9EA8E292A2CD489CEF1C03 /* Pods_NetworkCore.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		B66C403A25098B53003DD419 = {
 			isa = PBXGroup;
 			children = (
 				B66C404625098B53003DD419 /* NetworkCore */,
 				B66C404525098B53003DD419 /* Products */,
+				F29AC78A7A54C4BE2C3BEC86 /* Pods */,
+				0E07C62AD467B79572DAC613 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -52,6 +67,16 @@
 			path = NetworkCore;
 			sourceTree = "<group>";
 		};
+		F29AC78A7A54C4BE2C3BEC86 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				045A23EFF30B212B7004D1B8 /* Pods-NetworkCore.debug.xcconfig */,
+				1250D88638CB5EE8BF8174BB /* Pods-NetworkCore.release.xcconfig */,
+			);
+			name = Pods;
+			path = ../../../Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -70,6 +95,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B66C404C25098B53003DD419 /* Build configuration list for PBXNativeTarget "NetworkCore" */;
 			buildPhases = (
+				D55246E3C44709719F9E105C /* [CP] Check Pods Manifest.lock */,
 				B66C403F25098B53003DD419 /* Headers */,
 				B66C404025098B53003DD419 /* Sources */,
 				B66C404125098B53003DD419 /* Frameworks */,
@@ -125,6 +151,31 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		D55246E3C44709719F9E105C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NetworkCore-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		B66C404025098B53003DD419 /* Sources */ = {
@@ -259,6 +310,7 @@
 		};
 		B66C404D25098B53003DD419 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 045A23EFF30B212B7004D1B8 /* Pods-NetworkCore.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -282,6 +334,7 @@
 		};
 		B66C404E25098B53003DD419 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1250D88638CB5EE8BF8174BB /* Pods-NetworkCore.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;

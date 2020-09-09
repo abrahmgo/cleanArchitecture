@@ -7,9 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		242EDE162510E8AB58F4507B /* Pods_ShareCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70DFEF9923CE9C7D3D4D4F3E /* Pods_ShareCore.framework */; };
 		B685512325098D6400286975 /* ShareCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B685511925098D6400286975 /* ShareCore.framework */; };
 		B685512825098D6400286975 /* ShareCoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B685512725098D6400286975 /* ShareCoreTests.swift */; };
 		B685512A25098D6400286975 /* ShareCore.h in Headers */ = {isa = PBXBuildFile; fileRef = B685511C25098D6400286975 /* ShareCore.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DD13C8818409E0FC7559A591 /* Pods_ShareCore_ShareCoreTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A8D111EAB4A75E07EC8DF44 /* Pods_ShareCore_ShareCoreTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -23,12 +25,18 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		03605E0118952040F69E5327 /* Pods-ShareCore-ShareCoreTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShareCore-ShareCoreTests.debug.xcconfig"; path = "Target Support Files/Pods-ShareCore-ShareCoreTests/Pods-ShareCore-ShareCoreTests.debug.xcconfig"; sourceTree = "<group>"; };
+		57061088127B3ED24BA78A23 /* Pods-ShareCore.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShareCore.debug.xcconfig"; path = "Target Support Files/Pods-ShareCore/Pods-ShareCore.debug.xcconfig"; sourceTree = "<group>"; };
+		5A8D111EAB4A75E07EC8DF44 /* Pods_ShareCore_ShareCoreTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ShareCore_ShareCoreTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		70DFEF9923CE9C7D3D4D4F3E /* Pods_ShareCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ShareCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		90EBDA597BFB652250CCBFD9 /* Pods-ShareCore.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShareCore.release.xcconfig"; path = "Target Support Files/Pods-ShareCore/Pods-ShareCore.release.xcconfig"; sourceTree = "<group>"; };
 		B685511925098D6400286975 /* ShareCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ShareCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B685511C25098D6400286975 /* ShareCore.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShareCore.h; sourceTree = "<group>"; };
 		B685511D25098D6400286975 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B685512225098D6400286975 /* ShareCoreTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ShareCoreTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B685512725098D6400286975 /* ShareCoreTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareCoreTests.swift; sourceTree = "<group>"; };
 		B685512925098D6400286975 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BB88D04DAA24B52F24A13848 /* Pods-ShareCore-ShareCoreTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShareCore-ShareCoreTests.release.xcconfig"; path = "Target Support Files/Pods-ShareCore-ShareCoreTests/Pods-ShareCore-ShareCoreTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +44,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				242EDE162510E8AB58F4507B /* Pods_ShareCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +53,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B685512325098D6400286975 /* ShareCore.framework in Frameworks */,
+				DD13C8818409E0FC7559A591 /* Pods_ShareCore_ShareCoreTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,6 +66,8 @@
 				B685511B25098D6400286975 /* ShareCore */,
 				B685512625098D6400286975 /* ShareCoreTests */,
 				B685511A25098D6400286975 /* Products */,
+				F0B327C215B49EE5950FA160 /* Pods */,
+				B88124E6BF357C39A1FF99A2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -86,6 +98,27 @@
 			path = ShareCoreTests;
 			sourceTree = "<group>";
 		};
+		B88124E6BF357C39A1FF99A2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				70DFEF9923CE9C7D3D4D4F3E /* Pods_ShareCore.framework */,
+				5A8D111EAB4A75E07EC8DF44 /* Pods_ShareCore_ShareCoreTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F0B327C215B49EE5950FA160 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				57061088127B3ED24BA78A23 /* Pods-ShareCore.debug.xcconfig */,
+				90EBDA597BFB652250CCBFD9 /* Pods-ShareCore.release.xcconfig */,
+				03605E0118952040F69E5327 /* Pods-ShareCore-ShareCoreTests.debug.xcconfig */,
+				BB88D04DAA24B52F24A13848 /* Pods-ShareCore-ShareCoreTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = ../../../Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -104,6 +137,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B685512D25098D6400286975 /* Build configuration list for PBXNativeTarget "ShareCore" */;
 			buildPhases = (
+				F668FFCA480864D4BE7AB2B5 /* [CP] Check Pods Manifest.lock */,
 				B685511425098D6400286975 /* Headers */,
 				B685511525098D6400286975 /* Sources */,
 				B685511625098D6400286975 /* Frameworks */,
@@ -122,9 +156,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B685513025098D6400286975 /* Build configuration list for PBXNativeTarget "ShareCoreTests" */;
 			buildPhases = (
+				E8E81ED65CC2A927D5825937 /* [CP] Check Pods Manifest.lock */,
 				B685511E25098D6400286975 /* Sources */,
 				B685511F25098D6400286975 /* Frameworks */,
 				B685512025098D6400286975 /* Resources */,
+				081EA7883CF5CCA62151C0BF /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -189,6 +225,70 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		081EA7883CF5CCA62151C0BF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ShareCore-ShareCoreTests/Pods-ShareCore-ShareCoreTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ShareCore-ShareCoreTests/Pods-ShareCore-ShareCoreTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ShareCore-ShareCoreTests/Pods-ShareCore-ShareCoreTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E8E81ED65CC2A927D5825937 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ShareCore-ShareCoreTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F668FFCA480864D4BE7AB2B5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ShareCore-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		B685511525098D6400286975 /* Sources */ = {
@@ -339,6 +439,7 @@
 		};
 		B685512E25098D6400286975 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 57061088127B3ED24BA78A23 /* Pods-ShareCore.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -362,6 +463,7 @@
 		};
 		B685512F25098D6400286975 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 90EBDA597BFB652250CCBFD9 /* Pods-ShareCore.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -385,6 +487,7 @@
 		};
 		B685513125098D6400286975 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 03605E0118952040F69E5327 /* Pods-ShareCore-ShareCoreTests.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = ShareCoreTests/Info.plist;
@@ -402,6 +505,7 @@
 		};
 		B685513225098D6400286975 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BB88D04DAA24B52F24A13848 /* Pods-ShareCore-ShareCoreTests.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = ShareCoreTests/Info.plist;

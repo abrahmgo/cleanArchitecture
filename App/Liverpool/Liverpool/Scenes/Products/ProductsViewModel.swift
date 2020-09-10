@@ -33,7 +33,7 @@ public class ProductsViewModel: ProductsViewModelType, ProductsViewModelInputs, 
             .subscribe(onNext: { [weak self] (search) in
               
                 let items = search.itemListElement
-                let itemsData = items.map({ProductViewData(item: $0, imgProduct: nil)})
+                let itemsData = items.map({ProductViewData(item: $0)})
                 let itemsComponent = itemsData.map({ProductsComponent.product(viewData: $0)})
                 
                 self?.components.accept(itemsComponent)

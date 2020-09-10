@@ -23,7 +23,13 @@ struct ProductViewData: ProductViewDataType {
         return itemTitle
     }
     
-    var imgProduct: UIImage?
+    var imgProduct: URL? {
+        guard let url = item.item?.imgUrl else {
+            return nil
+        }
+        
+        return url
+    }
     
     var price: String {
         return ""
@@ -31,9 +37,9 @@ struct ProductViewData: ProductViewDataType {
     
     var imgRaiting: UIImage? {
         guard let raiting = item.item?.aggregateRating?.ratingValue else {
-            return UIImage(named: "")
+            return nil
         }
-        
+        print(raiting)
         let imgName = ScaleRating(scale: raiting)
         return UIImage(named: imgName.img)
     }

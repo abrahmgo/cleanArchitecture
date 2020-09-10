@@ -20,6 +20,7 @@ target 'Liverpool' do
   
   rx
   networking
+  pod 'Nuke'
   
 end
 
@@ -71,4 +72,12 @@ target 'Utils' do
   
   rx
   
+end
+
+## Components
+
+target 'Components' do
+  project 'UI/Components/Components'
+  
+  pod 'Nuke'
 end

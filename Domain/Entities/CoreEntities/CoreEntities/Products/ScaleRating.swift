@@ -19,17 +19,17 @@ public struct ScaleRating {
     public var img: String {
         switch scale {
         case 0..<1:
-            return ""
+            return "1star"
         case 1.1..<2:
-            return ""
+            return "2star"
         case 2.1..<3:
-            return ""
+            return "3star"
         case 3.1..<4:
-            return ""
+            return "4star"
         case 4.1..<5:
-            return ""
+            return "5star"
         default:
-            return ""
+            return "1star"
         }
     }
 }

@@ -8,11 +8,12 @@
 
 import UIKit
 import Utils
+import Nuke
 
 public protocol ProductViewDataType {
     
     var title: String { get }
-    var imgProduct: UIImage? { get }
+    var imgProduct: URL? { get }
     var price: String { get }
     var imgRaiting: UIImage? { get }
     var noReviews: String { get }
@@ -33,9 +34,11 @@ public class ProductCollectionViewCell: ResizableCollectionViewCell {
 
     public func config(viewData: ProductViewDataType) {
         lblTitle.text = viewData.title
-        imgProduct.image = viewData.imgProduct
         lblPrice.text = viewData.price
         imgRaiting.image = viewData.imgRaiting
         lblNoReviews.text = viewData.noReviews
+        if let imgUrl = viewData.imgProduct {
+            Nuke.loadImage(with: imgUrl, into: imgProduct)
+        }
     }
 }

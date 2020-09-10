@@ -100,6 +100,19 @@ extension ProductsViewController: UICollectionViewDelegate {
     
     public func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         
-        collectionView.deselectItem(at: indexPath, animated: true)
+        let component = components[indexPath.row]
+        
+        switch component {
+        case .product(let viewData):
+            guard let data = viewData as? ProductViewData else {
+                return
+            }
+            
+            guard let url = data.item.item?.url else {
+                return
+            }
+            
+            showWebPage(urlWebPage: url)
+        }
     }
 }

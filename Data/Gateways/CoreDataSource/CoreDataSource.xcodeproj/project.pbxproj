@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B6658F212509B0AB008F070A /* SearchProductRemoteDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6658F202509B0AB008F070A /* SearchProductRemoteDataSource.swift */; };
+		B6658F242509B13E008F070A /* SearchesRemoteDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6658F232509B13E008F070A /* SearchesRemoteDataSource.swift */; };
 		B66C405E25098B98003DD419 /* CoreDataSource.h in Headers */ = {isa = PBXBuildFile; fileRef = B66C405C25098B98003DD419 /* CoreDataSource.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DAC9742299062C6646EA2B07 /* Pods_CoreDataSource.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 586C6B31189F74319AD60A75 /* Pods_CoreDataSource.framework */; };
 /* End PBXBuildFile section */
@@ -14,6 +16,8 @@
 /* Begin PBXFileReference section */
 		586C6B31189F74319AD60A75 /* Pods_CoreDataSource.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CoreDataSource.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A6AA71FCA55AD18E294A6F31 /* Pods-CoreDataSource.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoreDataSource.debug.xcconfig"; path = "Target Support Files/Pods-CoreDataSource/Pods-CoreDataSource.debug.xcconfig"; sourceTree = "<group>"; };
+		B6658F202509B0AB008F070A /* SearchProductRemoteDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchProductRemoteDataSource.swift; sourceTree = "<group>"; };
+		B6658F232509B13E008F070A /* SearchesRemoteDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchesRemoteDataSource.swift; sourceTree = "<group>"; };
 		B66C405925098B98003DD419 /* CoreDataSource.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CoreDataSource.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B66C405C25098B98003DD419 /* CoreDataSource.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CoreDataSource.h; sourceTree = "<group>"; };
 		B66C405D25098B98003DD419 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -42,6 +46,22 @@
 			path = ../../../Pods;
 			sourceTree = "<group>";
 		};
+		B6658F1F2509B092008F070A /* SearchProduct */ = {
+			isa = PBXGroup;
+			children = (
+				B6658F202509B0AB008F070A /* SearchProductRemoteDataSource.swift */,
+			);
+			path = SearchProduct;
+			sourceTree = "<group>";
+		};
+		B6658F222509B129008F070A /* Searches */ = {
+			isa = PBXGroup;
+			children = (
+				B6658F232509B13E008F070A /* SearchesRemoteDataSource.swift */,
+			);
+			path = Searches;
+			sourceTree = "<group>";
+		};
 		B66C404F25098B98003DD419 = {
 			isa = PBXGroup;
 			children = (
@@ -63,6 +83,8 @@
 		B66C405B25098B98003DD419 /* CoreDataSource */ = {
 			isa = PBXGroup;
 			children = (
+				B6658F222509B129008F070A /* Searches */,
+				B6658F1F2509B092008F070A /* SearchProduct */,
 				B66C405C25098B98003DD419 /* CoreDataSource.h */,
 				B66C405D25098B98003DD419 /* Info.plist */,
 			);
@@ -121,6 +143,7 @@
 				TargetAttributes = {
 					B66C405825098B98003DD419 = {
 						CreatedOnToolsVersion = 11.7;
+						LastSwiftMigration = 1170;
 					};
 				};
 			};
@@ -182,6 +205,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B6658F242509B13E008F070A /* SearchesRemoteDataSource.swift in Sources */,
+				B6658F212509B0AB008F070A /* SearchProductRemoteDataSource.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -312,6 +337,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = A6AA71FCA55AD18E294A6F31 /* Pods-CoreDataSource.debug.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -328,6 +354,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.andres.CoreDataSource;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -337,6 +364,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = C92E305FFDBF25B4F7C0D072 /* Pods-CoreDataSource.release.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;

@@ -14,11 +14,10 @@
 		B638E9782509A52B001C7CE6 /* SearchProductAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = B638E9732509A52B001C7CE6 /* SearchProductAPI.swift */; };
 		B638E9792509A52B001C7CE6 /* SearchProductResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B638E9742509A52B001C7CE6 /* SearchProductResponseModel.swift */; };
 		B638E97B2509A812001C7CE6 /* Utils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B638E97A2509A812001C7CE6 /* Utils.framework */; };
-		B638E97C2509A812001C7CE6 /* Utils.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B638E97A2509A812001C7CE6 /* Utils.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		B638E97F2509AAA6001C7CE6 /* Products.json in Resources */ = {isa = PBXBuildFile; fileRef = B638E97E2509AAA6001C7CE6 /* Products.json */; };
 		B638E98A2509AC40001C7CE6 /* CoreEntities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B638E9892509AC40001C7CE6 /* CoreEntities.framework */; };
-		B638E98B2509AC40001C7CE6 /* CoreEntities.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B638E9892509AC40001C7CE6 /* CoreEntities.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		B638E98D2509AE1A001C7CE6 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B638E98C2509AE1A001C7CE6 /* Constants.swift */; };
+		B6658F262509B1DA008F070A /* CoreDataSource.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6658F252509B1DA008F070A /* CoreDataSource.framework */; };
 		B685512325098D6400286975 /* ShareCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B685511925098D6400286975 /* ShareCore.framework */; };
 		B685512825098D6400286975 /* ShareCoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B685512725098D6400286975 /* ShareCoreTests.swift */; };
 		B685512A25098D6400286975 /* ShareCore.h in Headers */ = {isa = PBXBuildFile; fileRef = B685511C25098D6400286975 /* ShareCore.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -35,21 +34,6 @@
 		};
 /* End PBXContainerItemProxy section */
 
-/* Begin PBXCopyFilesBuildPhase section */
-		B638E97D2509A812001C7CE6 /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				B638E98B2509AC40001C7CE6 /* CoreEntities.framework in Embed Frameworks */,
-				B638E97C2509A812001C7CE6 /* Utils.framework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
-
 /* Begin PBXFileReference section */
 		03605E0118952040F69E5327 /* Pods-ShareCore-ShareCoreTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShareCore-ShareCoreTests.debug.xcconfig"; path = "Target Support Files/Pods-ShareCore-ShareCoreTests/Pods-ShareCore-ShareCoreTests.debug.xcconfig"; sourceTree = "<group>"; };
 		57061088127B3ED24BA78A23 /* Pods-ShareCore.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShareCore.debug.xcconfig"; path = "Target Support Files/Pods-ShareCore/Pods-ShareCore.debug.xcconfig"; sourceTree = "<group>"; };
@@ -65,6 +49,7 @@
 		B638E97E2509AAA6001C7CE6 /* Products.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Products.json; sourceTree = "<group>"; };
 		B638E9892509AC40001C7CE6 /* CoreEntities.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = CoreEntities.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B638E98C2509AE1A001C7CE6 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		B6658F252509B1DA008F070A /* CoreDataSource.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = CoreDataSource.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B685511925098D6400286975 /* ShareCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ShareCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B685511C25098D6400286975 /* ShareCore.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShareCore.h; sourceTree = "<group>"; };
 		B685511D25098D6400286975 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -79,6 +64,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B6658F262509B1DA008F070A /* CoreDataSource.framework in Frameworks */,
 				B638E98A2509AC40001C7CE6 /* CoreEntities.framework in Frameworks */,
 				B638E97B2509A812001C7CE6 /* Utils.framework in Frameworks */,
 				242EDE162510E8AB58F4507B /* Pods_ShareCore.framework in Frameworks */,
@@ -161,6 +147,7 @@
 		B88124E6BF357C39A1FF99A2 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				B6658F252509B1DA008F070A /* CoreDataSource.framework */,
 				B638E9892509AC40001C7CE6 /* CoreEntities.framework */,
 				B638E97A2509A812001C7CE6 /* Utils.framework */,
 				70DFEF9923CE9C7D3D4D4F3E /* Pods_ShareCore.framework */,
@@ -204,7 +191,6 @@
 				B685511525098D6400286975 /* Sources */,
 				B685511625098D6400286975 /* Frameworks */,
 				B685511725098D6400286975 /* Resources */,
-				B638E97D2509A812001C7CE6 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);

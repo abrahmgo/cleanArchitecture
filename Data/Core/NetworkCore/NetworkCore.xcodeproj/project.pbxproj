@@ -7,34 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B6658F292509B297008F070A /* NetworkCoreData.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6658F282509B297008F070A /* NetworkCoreData.swift */; };
+		B6658F2B2509B2B1008F070A /* NetworkCoreError.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6658F2A2509B2B1008F070A /* NetworkCoreError.swift */; };
 		B66C404925098B53003DD419 /* NetworkCore.h in Headers */ = {isa = PBXBuildFile; fileRef = B66C404725098B53003DD419 /* NetworkCore.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B6A2C6E4250999C200F6FB06 /* NetworkCoreAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6A2C6E3250999C200F6FB06 /* NetworkCoreAPI.swift */; };
 		B6A2C6E6250999E600F6FB06 /* NetworkCoreConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6A2C6E5250999E600F6FB06 /* NetworkCoreConfig.swift */; };
 		B6A2C6E825099A2200F6FB06 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6A2C6E725099A2200F6FB06 /* NetworkService.swift */; };
 		B6A2C6EA25099A6700F6FB06 /* NetworkTargetType.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6A2C6E925099A6700F6FB06 /* NetworkTargetType.swift */; };
 		B6A2C6EF25099B5700F6FB06 /* Utils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6A2C6EE25099B5700F6FB06 /* Utils.framework */; };
-		B6A2C6F025099B5700F6FB06 /* Utils.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B6A2C6EE25099B5700F6FB06 /* Utils.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		F954718D2A4F94AF96B41F0D /* Pods_NetworkCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B9EA8E292A2CD489CEF1C03 /* Pods_NetworkCore.framework */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXCopyFilesBuildPhase section */
-		B6A2C6F125099B5700F6FB06 /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				B6A2C6F025099B5700F6FB06 /* Utils.framework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		045A23EFF30B212B7004D1B8 /* Pods-NetworkCore.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NetworkCore.debug.xcconfig"; path = "Target Support Files/Pods-NetworkCore/Pods-NetworkCore.debug.xcconfig"; sourceTree = "<group>"; };
 		1250D88638CB5EE8BF8174BB /* Pods-NetworkCore.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NetworkCore.release.xcconfig"; path = "Target Support Files/Pods-NetworkCore/Pods-NetworkCore.release.xcconfig"; sourceTree = "<group>"; };
 		8B9EA8E292A2CD489CEF1C03 /* Pods_NetworkCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NetworkCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B6658F282509B297008F070A /* NetworkCoreData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkCoreData.swift; sourceTree = "<group>"; };
+		B6658F2A2509B2B1008F070A /* NetworkCoreError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkCoreError.swift; sourceTree = "<group>"; };
 		B66C404425098B53003DD419 /* NetworkCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NetworkCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B66C404725098B53003DD419 /* NetworkCore.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NetworkCore.h; sourceTree = "<group>"; };
 		B66C404825098B53003DD419 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -94,6 +83,8 @@
 				B6A2C6E5250999E600F6FB06 /* NetworkCoreConfig.swift */,
 				B6A2C6E725099A2200F6FB06 /* NetworkService.swift */,
 				B6A2C6E925099A6700F6FB06 /* NetworkTargetType.swift */,
+				B6658F282509B297008F070A /* NetworkCoreData.swift */,
+				B6658F2A2509B2B1008F070A /* NetworkCoreError.swift */,
 			);
 			path = NetworkCore;
 			sourceTree = "<group>";
@@ -131,7 +122,6 @@
 				B66C404025098B53003DD419 /* Sources */,
 				B66C404125098B53003DD419 /* Frameworks */,
 				B66C404225098B53003DD419 /* Resources */,
-				B6A2C6F125099B5700F6FB06 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -218,6 +208,8 @@
 				B6A2C6E4250999C200F6FB06 /* NetworkCoreAPI.swift in Sources */,
 				B6A2C6EA25099A6700F6FB06 /* NetworkTargetType.swift in Sources */,
 				B6A2C6E825099A2200F6FB06 /* NetworkService.swift in Sources */,
+				B6658F292509B297008F070A /* NetworkCoreData.swift in Sources */,
+				B6658F2B2509B2B1008F070A /* NetworkCoreError.swift in Sources */,
 				B6A2C6E6250999E600F6FB06 /* NetworkCoreConfig.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

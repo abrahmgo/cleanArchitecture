@@ -10,16 +10,15 @@ import Foundation
 
 enum APIBundle: String {
     
-    // NOTE: values in Settings.bundle/Root.plist must match these
     case production = "PRODUCTION"
     case development = "DEV"
     
     var server: String {
         switch self {
         case .production:
-            return "https://platform.konfio.mx"
+            return "https://www.liverpool.com.mx/"
         case .development:
-            return "https://dev-platform.konfio.mx"
+            return "https://www.liverpool.com.mx/"
         }
     }
 }

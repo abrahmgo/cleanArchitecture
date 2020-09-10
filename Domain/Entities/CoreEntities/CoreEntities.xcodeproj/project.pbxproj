@@ -7,10 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B638E9822509AAFB001C7CE6 /* SearchProduct.swift in Sources */ = {isa = PBXBuildFile; fileRef = B638E9812509AAFB001C7CE6 /* SearchProduct.swift */; };
+		B638E9842509AB19001C7CE6 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = B638E9832509AB19001C7CE6 /* Item.swift */; };
+		B638E9862509AB23001C7CE6 /* ItemInformation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B638E9852509AB23001C7CE6 /* ItemInformation.swift */; };
+		B638E9882509AB30001C7CE6 /* ItemRaiting.swift in Sources */ = {isa = PBXBuildFile; fileRef = B638E9872509AB30001C7CE6 /* ItemRaiting.swift */; };
 		B66C407325098BD5003DD419 /* CoreEntities.h in Headers */ = {isa = PBXBuildFile; fileRef = B66C407125098BD5003DD419 /* CoreEntities.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B638E9812509AAFB001C7CE6 /* SearchProduct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchProduct.swift; sourceTree = "<group>"; };
+		B638E9832509AB19001C7CE6 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		B638E9852509AB23001C7CE6 /* ItemInformation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemInformation.swift; sourceTree = "<group>"; };
+		B638E9872509AB30001C7CE6 /* ItemRaiting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemRaiting.swift; sourceTree = "<group>"; };
 		B66C406E25098BD5003DD419 /* CoreEntities.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CoreEntities.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B66C407125098BD5003DD419 /* CoreEntities.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CoreEntities.h; sourceTree = "<group>"; };
 		B66C407225098BD5003DD419 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -27,6 +35,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B638E9802509AADB001C7CE6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B638E9812509AAFB001C7CE6 /* SearchProduct.swift */,
+				B638E9832509AB19001C7CE6 /* Item.swift */,
+				B638E9852509AB23001C7CE6 /* ItemInformation.swift */,
+				B638E9872509AB30001C7CE6 /* ItemRaiting.swift */,
+			);
+			path = Products;
+			sourceTree = "<group>";
+		};
 		B66C406425098BD5003DD419 = {
 			isa = PBXGroup;
 			children = (
@@ -46,6 +65,7 @@
 		B66C407025098BD5003DD419 /* CoreEntities */ = {
 			isa = PBXGroup;
 			children = (
+				B638E9802509AADB001C7CE6 /* Products */,
 				B66C407125098BD5003DD419 /* CoreEntities.h */,
 				B66C407225098BD5003DD419 /* Info.plist */,
 			);
@@ -95,6 +115,7 @@
 				TargetAttributes = {
 					B66C406D25098BD5003DD419 = {
 						CreatedOnToolsVersion = 11.7;
+						LastSwiftMigration = 1170;
 					};
 				};
 			};
@@ -131,6 +152,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B638E9842509AB19001C7CE6 /* Item.swift in Sources */,
+				B638E9882509AB30001C7CE6 /* ItemRaiting.swift in Sources */,
+				B638E9862509AB23001C7CE6 /* ItemInformation.swift in Sources */,
+				B638E9822509AAFB001C7CE6 /* SearchProduct.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,6 +285,7 @@
 		B66C407725098BD5003DD419 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -276,6 +302,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.andres.CoreEntities;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -284,6 +311,7 @@
 		B66C407825098BD5003DD419 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;

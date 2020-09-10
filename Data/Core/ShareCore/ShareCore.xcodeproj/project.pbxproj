@@ -8,6 +8,17 @@
 
 /* Begin PBXBuildFile section */
 		242EDE162510E8AB58F4507B /* Pods_ShareCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70DFEF9923CE9C7D3D4D4F3E /* Pods_ShareCore.framework */; };
+		B638E9752509A52B001C7CE6 /* SearchProductResponseModel+Mapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B638E9702509A52B001C7CE6 /* SearchProductResponseModel+Mapper.swift */; };
+		B638E9762509A52B001C7CE6 /* SearchProductEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = B638E9712509A52B001C7CE6 /* SearchProductEndpoint.swift */; };
+		B638E9772509A52B001C7CE6 /* SearchProductRequestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B638E9722509A52B001C7CE6 /* SearchProductRequestModel.swift */; };
+		B638E9782509A52B001C7CE6 /* SearchProductAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = B638E9732509A52B001C7CE6 /* SearchProductAPI.swift */; };
+		B638E9792509A52B001C7CE6 /* SearchProductResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B638E9742509A52B001C7CE6 /* SearchProductResponseModel.swift */; };
+		B638E97B2509A812001C7CE6 /* Utils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B638E97A2509A812001C7CE6 /* Utils.framework */; };
+		B638E97C2509A812001C7CE6 /* Utils.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B638E97A2509A812001C7CE6 /* Utils.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B638E97F2509AAA6001C7CE6 /* Products.json in Resources */ = {isa = PBXBuildFile; fileRef = B638E97E2509AAA6001C7CE6 /* Products.json */; };
+		B638E98A2509AC40001C7CE6 /* CoreEntities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B638E9892509AC40001C7CE6 /* CoreEntities.framework */; };
+		B638E98B2509AC40001C7CE6 /* CoreEntities.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B638E9892509AC40001C7CE6 /* CoreEntities.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B638E98D2509AE1A001C7CE6 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B638E98C2509AE1A001C7CE6 /* Constants.swift */; };
 		B685512325098D6400286975 /* ShareCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B685511925098D6400286975 /* ShareCore.framework */; };
 		B685512825098D6400286975 /* ShareCoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B685512725098D6400286975 /* ShareCoreTests.swift */; };
 		B685512A25098D6400286975 /* ShareCore.h in Headers */ = {isa = PBXBuildFile; fileRef = B685511C25098D6400286975 /* ShareCore.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -24,12 +35,36 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		B638E97D2509A812001C7CE6 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				B638E98B2509AC40001C7CE6 /* CoreEntities.framework in Embed Frameworks */,
+				B638E97C2509A812001C7CE6 /* Utils.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		03605E0118952040F69E5327 /* Pods-ShareCore-ShareCoreTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShareCore-ShareCoreTests.debug.xcconfig"; path = "Target Support Files/Pods-ShareCore-ShareCoreTests/Pods-ShareCore-ShareCoreTests.debug.xcconfig"; sourceTree = "<group>"; };
 		57061088127B3ED24BA78A23 /* Pods-ShareCore.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShareCore.debug.xcconfig"; path = "Target Support Files/Pods-ShareCore/Pods-ShareCore.debug.xcconfig"; sourceTree = "<group>"; };
 		5A8D111EAB4A75E07EC8DF44 /* Pods_ShareCore_ShareCoreTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ShareCore_ShareCoreTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		70DFEF9923CE9C7D3D4D4F3E /* Pods_ShareCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ShareCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		90EBDA597BFB652250CCBFD9 /* Pods-ShareCore.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShareCore.release.xcconfig"; path = "Target Support Files/Pods-ShareCore/Pods-ShareCore.release.xcconfig"; sourceTree = "<group>"; };
+		B638E9702509A52B001C7CE6 /* SearchProductResponseModel+Mapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SearchProductResponseModel+Mapper.swift"; sourceTree = "<group>"; };
+		B638E9712509A52B001C7CE6 /* SearchProductEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchProductEndpoint.swift; sourceTree = "<group>"; };
+		B638E9722509A52B001C7CE6 /* SearchProductRequestModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchProductRequestModel.swift; sourceTree = "<group>"; };
+		B638E9732509A52B001C7CE6 /* SearchProductAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchProductAPI.swift; sourceTree = "<group>"; };
+		B638E9742509A52B001C7CE6 /* SearchProductResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchProductResponseModel.swift; sourceTree = "<group>"; };
+		B638E97A2509A812001C7CE6 /* Utils.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Utils.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B638E97E2509AAA6001C7CE6 /* Products.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Products.json; sourceTree = "<group>"; };
+		B638E9892509AC40001C7CE6 /* CoreEntities.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = CoreEntities.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B638E98C2509AE1A001C7CE6 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		B685511925098D6400286975 /* ShareCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ShareCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B685511C25098D6400286975 /* ShareCore.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShareCore.h; sourceTree = "<group>"; };
 		B685511D25098D6400286975 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -44,6 +79,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B638E98A2509AC40001C7CE6 /* CoreEntities.framework in Frameworks */,
+				B638E97B2509A812001C7CE6 /* Utils.framework in Frameworks */,
 				242EDE162510E8AB58F4507B /* Pods_ShareCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -60,6 +97,27 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B638E96E2509A508001C7CE6 /* Remote */ = {
+			isa = PBXGroup;
+			children = (
+				B638E96F2509A514001C7CE6 /* SearchProduct */,
+			);
+			path = Remote;
+			sourceTree = "<group>";
+		};
+		B638E96F2509A514001C7CE6 /* SearchProduct */ = {
+			isa = PBXGroup;
+			children = (
+				B638E9702509A52B001C7CE6 /* SearchProductResponseModel+Mapper.swift */,
+				B638E9712509A52B001C7CE6 /* SearchProductEndpoint.swift */,
+				B638E9722509A52B001C7CE6 /* SearchProductRequestModel.swift */,
+				B638E9732509A52B001C7CE6 /* SearchProductAPI.swift */,
+				B638E9742509A52B001C7CE6 /* SearchProductResponseModel.swift */,
+				B638E97E2509AAA6001C7CE6 /* Products.json */,
+			);
+			path = SearchProduct;
+			sourceTree = "<group>";
+		};
 		B685510F25098D6400286975 = {
 			isa = PBXGroup;
 			children = (
@@ -83,8 +141,10 @@
 		B685511B25098D6400286975 /* ShareCore */ = {
 			isa = PBXGroup;
 			children = (
+				B638E96E2509A508001C7CE6 /* Remote */,
 				B685511C25098D6400286975 /* ShareCore.h */,
 				B685511D25098D6400286975 /* Info.plist */,
+				B638E98C2509AE1A001C7CE6 /* Constants.swift */,
 			);
 			path = ShareCore;
 			sourceTree = "<group>";
@@ -101,6 +161,8 @@
 		B88124E6BF357C39A1FF99A2 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				B638E9892509AC40001C7CE6 /* CoreEntities.framework */,
+				B638E97A2509A812001C7CE6 /* Utils.framework */,
 				70DFEF9923CE9C7D3D4D4F3E /* Pods_ShareCore.framework */,
 				5A8D111EAB4A75E07EC8DF44 /* Pods_ShareCore_ShareCoreTests.framework */,
 			);
@@ -142,6 +204,7 @@
 				B685511525098D6400286975 /* Sources */,
 				B685511625098D6400286975 /* Frameworks */,
 				B685511725098D6400286975 /* Resources */,
+				B638E97D2509A812001C7CE6 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -214,6 +277,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B638E97F2509AAA6001C7CE6 /* Products.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -295,6 +359,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B638E9792509A52B001C7CE6 /* SearchProductResponseModel.swift in Sources */,
+				B638E9762509A52B001C7CE6 /* SearchProductEndpoint.swift in Sources */,
+				B638E9752509A52B001C7CE6 /* SearchProductResponseModel+Mapper.swift in Sources */,
+				B638E9782509A52B001C7CE6 /* SearchProductAPI.swift in Sources */,
+				B638E9772509A52B001C7CE6 /* SearchProductRequestModel.swift in Sources */,
+				B638E98D2509AE1A001C7CE6 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -491,6 +561,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 03605E0118952040F69E5327 /* Pods-ShareCore-ShareCoreTests.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = ShareCoreTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -509,6 +580,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = BB88D04DAA24B52F24A13848 /* Pods-ShareCore-ShareCoreTests.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = ShareCoreTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (

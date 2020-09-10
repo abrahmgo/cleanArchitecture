@@ -1,0 +1,49 @@
+{
+    "numberOfItems": 1130,
+    "itemListElement": [
+        {
+            "@type": "ListItem",
+            "position": 1,
+            "item": {
+                "@type": "Product",
+                "name": "Tarjeta de Regalo Xbox Live",
+                "url": "https://www.liverpool.com.mx/tienda/pdp/Tarjeta de Regalo Xbox Live/1069305241?skuId=1069305241",
+                "aggregateRating": {
+                    "@type": "AggregateRating",
+                    "ratingValue": "4.500000",
+                    "reviewCount": "13"
+                },
+                "Offers": {}
+            }
+        },
+        {
+            "@type": "ListItem",
+            "position": 2,
+            "item": {
+                "@type": "Product",
+                "name": "Tarjeta de Regalo Xbox Live",
+                "url": "https://www.liverpool.com.mx/tienda/pdp/Tarjeta de Regalo Xbox Live/1069305233?skuId=1069305233",
+                "aggregateRating": {
+                    "@type": "AggregateRating",
+                    "ratingValue": "4.200000",
+                    "reviewCount": "5"
+                },
+                "Offers": {}
+            }
+        },
+        {
+            "@type": "ListItem",
+            "position": 3,
+            "item": {
+                "@type": "Product",
+                "name": "Xbox Live Gold 1 mes Xbox",
+                "url": "https://www.liverpool.com.mx/tienda/pdp/Xbox Live Gold 1 mes Xbox/1092300001?skuId=1092300001",
+                "aggregateRating": {
+                    "@type": "AggregateRating",
+                    "ratingValue": "5.000000",
+                    "reviewCount": "2"
+                },
+                "Offers": {}
+            }
+        }]
+}

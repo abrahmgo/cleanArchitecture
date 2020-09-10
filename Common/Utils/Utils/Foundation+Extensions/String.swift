@@ -14,3 +14,10 @@ extension String: LocalizedError {
         return self
     }
 }
+
+public extension String {
+    
+    func toURL() -> URL? {
+        return URL(string: self)
+    }
+}

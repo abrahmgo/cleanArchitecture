@@ -7,10 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B61854DE2509C3D700A7BF01 /* ProductCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B61854DC2509C3D700A7BF01 /* ProductCollectionViewCell.swift */; };
+		B61854DF2509C3D700A7BF01 /* ProductCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B61854DD2509C3D700A7BF01 /* ProductCollectionViewCell.xib */; };
+		B61854E82509C80400A7BF01 /* ComponentsConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B61854E72509C80400A7BF01 /* ComponentsConstants.swift */; };
 		B66C40D825098CBF003DD419 /* Components.h in Headers */ = {isa = PBXBuildFile; fileRef = B66C40D625098CBF003DD419 /* Components.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B61854DC2509C3D700A7BF01 /* ProductCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCollectionViewCell.swift; sourceTree = "<group>"; };
+		B61854DD2509C3D700A7BF01 /* ProductCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProductCollectionViewCell.xib; sourceTree = "<group>"; };
+		B61854E72509C80400A7BF01 /* ComponentsConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComponentsConstants.swift; sourceTree = "<group>"; };
 		B66C40D325098CBF003DD419 /* Components.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Components.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B66C40D625098CBF003DD419 /* Components.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Components.h; sourceTree = "<group>"; };
 		B66C40D725098CBF003DD419 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -48,6 +54,9 @@
 			children = (
 				B66C40D625098CBF003DD419 /* Components.h */,
 				B66C40D725098CBF003DD419 /* Info.plist */,
+				B61854DC2509C3D700A7BF01 /* ProductCollectionViewCell.swift */,
+				B61854DD2509C3D700A7BF01 /* ProductCollectionViewCell.xib */,
+				B61854E72509C80400A7BF01 /* ComponentsConstants.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -95,6 +104,7 @@
 				TargetAttributes = {
 					B66C40D225098CBF003DD419 = {
 						CreatedOnToolsVersion = 11.7;
+						LastSwiftMigration = 1170;
 					};
 				};
 			};
@@ -121,6 +131,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B61854DF2509C3D700A7BF01 /* ProductCollectionViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -131,6 +142,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B61854DE2509C3D700A7BF01 /* ProductCollectionViewCell.swift in Sources */,
+				B61854E82509C80400A7BF01 /* ComponentsConstants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,6 +273,7 @@
 		B66C40DC25098CBF003DD419 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -276,6 +290,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.andres.Components;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -284,6 +299,7 @@
 		B66C40DD25098CBF003DD419 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;

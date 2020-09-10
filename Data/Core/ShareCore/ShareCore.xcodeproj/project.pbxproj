@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		242EDE162510E8AB58F4507B /* Pods_ShareCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70DFEF9923CE9C7D3D4D4F3E /* Pods_ShareCore.framework */; };
+		B61854EA2509C82C00A7BF01 /* NetworkCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B61854E92509C82C00A7BF01 /* NetworkCore.framework */; };
 		B638E9752509A52B001C7CE6 /* SearchProductResponseModel+Mapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B638E9702509A52B001C7CE6 /* SearchProductResponseModel+Mapper.swift */; };
 		B638E9762509A52B001C7CE6 /* SearchProductEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = B638E9712509A52B001C7CE6 /* SearchProductEndpoint.swift */; };
 		B638E9772509A52B001C7CE6 /* SearchProductRequestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B638E9722509A52B001C7CE6 /* SearchProductRequestModel.swift */; };
@@ -41,6 +42,7 @@
 		5A8D111EAB4A75E07EC8DF44 /* Pods_ShareCore_ShareCoreTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ShareCore_ShareCoreTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		70DFEF9923CE9C7D3D4D4F3E /* Pods_ShareCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ShareCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		90EBDA597BFB652250CCBFD9 /* Pods-ShareCore.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShareCore.release.xcconfig"; path = "Target Support Files/Pods-ShareCore/Pods-ShareCore.release.xcconfig"; sourceTree = "<group>"; };
+		B61854E92509C82C00A7BF01 /* NetworkCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = NetworkCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B638E9702509A52B001C7CE6 /* SearchProductResponseModel+Mapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SearchProductResponseModel+Mapper.swift"; sourceTree = "<group>"; };
 		B638E9712509A52B001C7CE6 /* SearchProductEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchProductEndpoint.swift; sourceTree = "<group>"; };
 		B638E9722509A52B001C7CE6 /* SearchProductRequestModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchProductRequestModel.swift; sourceTree = "<group>"; };
@@ -68,6 +70,7 @@
 			files = (
 				B6658F262509B1DA008F070A /* CoreDataSource.framework in Frameworks */,
 				B638E98A2509AC40001C7CE6 /* CoreEntities.framework in Frameworks */,
+				B61854EA2509C82C00A7BF01 /* NetworkCore.framework in Frameworks */,
 				B638E97B2509A812001C7CE6 /* Utils.framework in Frameworks */,
 				242EDE162510E8AB58F4507B /* Pods_ShareCore.framework in Frameworks */,
 			);
@@ -150,6 +153,7 @@
 		B88124E6BF357C39A1FF99A2 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				B61854E92509C82C00A7BF01 /* NetworkCore.framework */,
 				B6658F252509B1DA008F070A /* CoreDataSource.framework */,
 				B638E9892509AC40001C7CE6 /* CoreEntities.framework */,
 				B638E97A2509A812001C7CE6 /* Utils.framework */,

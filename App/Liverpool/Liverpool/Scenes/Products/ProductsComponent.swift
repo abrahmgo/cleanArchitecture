@@ -7,5 +7,9 @@
 //
 
 import Foundation
+import Components
 
-public enum ProductsComponent { }
+public enum ProductsComponent {
+    
+    case product(viewData: ProductViewDataType)
+}

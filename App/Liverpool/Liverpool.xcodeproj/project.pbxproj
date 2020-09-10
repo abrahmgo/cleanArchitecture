@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B61854E52509C7DD00A7BF01 /* Components.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B61854E42509C7DD00A7BF01 /* Components.framework */; };
+		B61854E62509C7DD00A7BF01 /* Components.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B61854E42509C7DD00A7BF01 /* Components.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B61854EE2509C8C000A7BF01 /* ProductViewData.swift in Sources */ = {isa = PBXBuildFile; fileRef = B61854ED2509C8C000A7BF01 /* ProductViewData.swift */; };
 		B642A08A2509B494002B88F1 /* CoreUseCases.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B642A0892509B494002B88F1 /* CoreUseCases.framework */; };
 		B642A08B2509B494002B88F1 /* CoreUseCases.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B642A0892509B494002B88F1 /* CoreUseCases.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		B642A08F2509B5F2002B88F1 /* ShareCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B642A08E2509B5F2002B88F1 /* ShareCore.framework */; };
@@ -44,6 +47,7 @@
 			files = (
 				B6A2C6D02509970000F6FB06 /* Utils.framework in Embed Frameworks */,
 				B642A0902509B5F2002B88F1 /* ShareCore.framework in Embed Frameworks */,
+				B61854E62509C7DD00A7BF01 /* Components.framework in Embed Frameworks */,
 				B642A08B2509B494002B88F1 /* CoreUseCases.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
@@ -54,6 +58,8 @@
 /* Begin PBXFileReference section */
 		3281F92C35459704C83E8632 /* Pods-Liverpool.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Liverpool.release.xcconfig"; path = "Target Support Files/Pods-Liverpool/Pods-Liverpool.release.xcconfig"; sourceTree = "<group>"; };
 		5935EB63508061AEE7FF0EFB /* Pods-Liverpool.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Liverpool.debug.xcconfig"; path = "Target Support Files/Pods-Liverpool/Pods-Liverpool.debug.xcconfig"; sourceTree = "<group>"; };
+		B61854E42509C7DD00A7BF01 /* Components.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Components.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B61854ED2509C8C000A7BF01 /* ProductViewData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductViewData.swift; sourceTree = "<group>"; };
 		B642A0892509B494002B88F1 /* CoreUseCases.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = CoreUseCases.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B642A08E2509B5F2002B88F1 /* ShareCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = ShareCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6479A152509A1780044CA0C /* ProductsCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsCoordinator.swift; sourceTree = "<group>"; };
@@ -88,6 +94,7 @@
 			files = (
 				B642A08A2509B494002B88F1 /* CoreUseCases.framework in Frameworks */,
 				B6A2C6CF2509970000F6FB06 /* Utils.framework in Frameworks */,
+				B61854E52509C7DD00A7BF01 /* Components.framework in Frameworks */,
 				E25DD081F386CC481A00652C /* Pods_Liverpool.framework in Frameworks */,
 				B642A08F2509B5F2002B88F1 /* ShareCore.framework in Frameworks */,
 			);
@@ -116,6 +123,7 @@
 				B6479A192509A1780044CA0C /* ProductsViewModel+Dependencies.swift */,
 				B6479A1A2509A1780044CA0C /* ProductsViewModel.swift */,
 				B6479A1B2509A1780044CA0C /* ProductsViewController.xib */,
+				B61854ED2509C8C000A7BF01 /* ProductViewData.swift */,
 			);
 			path = Products;
 			sourceTree = "<group>";
@@ -210,6 +218,7 @@
 		B7F6D9CBEB61A80C5C547C3C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				B61854E42509C7DD00A7BF01 /* Components.framework */,
 				B642A08E2509B5F2002B88F1 /* ShareCore.framework */,
 				B642A0892509B494002B88F1 /* CoreUseCases.framework */,
 				B6A2C6CE2509970000F6FB06 /* Utils.framework */,
@@ -341,6 +350,7 @@
 				B6479A222509A1780044CA0C /* ProductsViewModel.swift in Sources */,
 				B6A2C6DD2509988100F6FB06 /* SplashViewModel + Dependencies.swift in Sources */,
 				B6479A1D2509A1780044CA0C /* ProductsCoordinator.swift in Sources */,
+				B61854EE2509C8C000A7BF01 /* ProductViewData.swift in Sources */,
 				B6479A1E2509A1780044CA0C /* ProductsFactory.swift in Sources */,
 				B6479A1F2509A1780044CA0C /* ProductsViewController.swift in Sources */,
 				B6A2C6DF250998AD00F6FB06 /* SplashViewModel.swift in Sources */,

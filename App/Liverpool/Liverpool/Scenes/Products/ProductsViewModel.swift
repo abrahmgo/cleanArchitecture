@@ -30,10 +30,16 @@ public class ProductsViewModel: ProductsViewModelType, ProductsViewModelInputs, 
         self.dependencies = dependencies
         
         dependencies.getProducts.execute(product: "product")
-            .subscribe(onNext: { (search) in
-                dump(search)
+            .subscribe(onNext: { [weak self] (search) in
+              
+                let items = search.itemListElement
+                let itemsData = items.map({ProductViewData(item: $0, imgProduct: nil)})
+                let itemsComponent = itemsData.map({ProductsComponent.product(viewData: $0)})
+                
+                self?.components.accept(itemsComponent)
+                
             }, onError: { (error) in
-                print(error)
+                self.error.onNext(error)
             }).disposed(by: disposeBag)
     }
 }

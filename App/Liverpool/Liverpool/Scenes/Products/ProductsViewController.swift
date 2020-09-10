@@ -9,6 +9,7 @@
 import UIKit
 import RxSwift
 import Utils
+import Components
 
 public class ProductsViewController: UIViewController {
     
@@ -18,6 +19,7 @@ public class ProductsViewController: UIViewController {
             customFlowLayout.estimatedItemSize = UICollectionViewFlowLayout.automaticSize
             customFlowLayout.minimumLineSpacing = 0
 
+            collectionView.register(cellType: ProductCollectionViewCell.self, bundle: ComponentsConstants.bundle)
             collectionView.collectionViewLayout = customFlowLayout
             collectionView.dataSource = self
             collectionView.delegate = self
@@ -81,8 +83,14 @@ extension ProductsViewController: UICollectionViewDataSource {
     
     public func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
-        // TODO: Should implement based on availabe components
-        return UICollectionViewCell()
+        let component = components[indexPath.row]
+        
+        switch component {
+        case .product(let viewData):
+            let cell = collectionView.dequeueReusableCell(with: ProductCollectionViewCell.self, for: indexPath)
+            cell.config(viewData: viewData)
+            return cell
+        }
     }
 }
 

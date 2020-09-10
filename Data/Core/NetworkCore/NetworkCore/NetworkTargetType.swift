@@ -17,17 +17,12 @@ public protocol NetworkTargetType {
     var parameters: Parameters? { get }
     var encoding: ParameterEncoding { get }
     var headers: HTTPHeaders? { get }
-    var retry: Bool { get }
 }
 
 public extension NetworkTargetType {
     
     var sampleData: Data? {
         return nil
-    }
-    
-    var retry: Bool {
-        return false
     }
 }
 

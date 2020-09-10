@@ -17,6 +17,7 @@
 		B638E97F2509AAA6001C7CE6 /* Products.json in Resources */ = {isa = PBXBuildFile; fileRef = B638E97E2509AAA6001C7CE6 /* Products.json */; };
 		B638E98A2509AC40001C7CE6 /* CoreEntities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B638E9892509AC40001C7CE6 /* CoreEntities.framework */; };
 		B638E98D2509AE1A001C7CE6 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B638E98C2509AE1A001C7CE6 /* Constants.swift */; };
+		B642A08D2509B54A002B88F1 /* ShareCoreRemoteDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = B642A08C2509B54A002B88F1 /* ShareCoreRemoteDataSource.swift */; };
 		B6658F262509B1DA008F070A /* CoreDataSource.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6658F252509B1DA008F070A /* CoreDataSource.framework */; };
 		B685512325098D6400286975 /* ShareCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B685511925098D6400286975 /* ShareCore.framework */; };
 		B685512825098D6400286975 /* ShareCoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B685512725098D6400286975 /* ShareCoreTests.swift */; };
@@ -49,6 +50,7 @@
 		B638E97E2509AAA6001C7CE6 /* Products.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Products.json; sourceTree = "<group>"; };
 		B638E9892509AC40001C7CE6 /* CoreEntities.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = CoreEntities.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B638E98C2509AE1A001C7CE6 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		B642A08C2509B54A002B88F1 /* ShareCoreRemoteDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareCoreRemoteDataSource.swift; sourceTree = "<group>"; };
 		B6658F252509B1DA008F070A /* CoreDataSource.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = CoreDataSource.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B685511925098D6400286975 /* ShareCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ShareCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B685511C25098D6400286975 /* ShareCore.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShareCore.h; sourceTree = "<group>"; };
@@ -127,6 +129,7 @@
 		B685511B25098D6400286975 /* ShareCore */ = {
 			isa = PBXGroup;
 			children = (
+				B642A08C2509B54A002B88F1 /* ShareCoreRemoteDataSource.swift */,
 				B638E96E2509A508001C7CE6 /* Remote */,
 				B685511C25098D6400286975 /* ShareCore.h */,
 				B685511D25098D6400286975 /* Info.plist */,
@@ -345,6 +348,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B642A08D2509B54A002B88F1 /* ShareCoreRemoteDataSource.swift in Sources */,
 				B638E9792509A52B001C7CE6 /* SearchProductResponseModel.swift in Sources */,
 				B638E9762509A52B001C7CE6 /* SearchProductEndpoint.swift in Sources */,
 				B638E9752509A52B001C7CE6 /* SearchProductResponseModel+Mapper.swift in Sources */,

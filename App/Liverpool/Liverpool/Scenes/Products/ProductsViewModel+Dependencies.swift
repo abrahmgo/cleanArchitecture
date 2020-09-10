@@ -9,6 +9,7 @@
 import UIKit
 import RxSwift
 import RxCocoa
+import CoreUseCases
 
 public protocol ProductsViewModelOutputs {
     var components: BehaviorRelay<[ProductsComponent]> { get }
@@ -23,4 +24,7 @@ public protocol ProductsViewModelType {
     var inputs: ProductsViewModelInputs { get }
 }
 
-public struct ProductsDependencies { }
+public struct ProductsDependencies {
+    
+    let getProducts: GetSearchProductsUseCaseType
+}

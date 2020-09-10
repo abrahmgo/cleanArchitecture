@@ -61,7 +61,7 @@ extension RaitingResponseModel {
     
     func mapToRaiting() -> ItemRaiting {
         
-        return ItemRaiting(ratingValue: ratingValue ?? 0,
-                           reviewCount: reviewCount ?? 0)
+        return ItemRaiting(ratingValue: ratingValue?.toDouble() ?? 0,
+                           reviewCount: reviewCount?.toInt() ?? 0)
     }
 }

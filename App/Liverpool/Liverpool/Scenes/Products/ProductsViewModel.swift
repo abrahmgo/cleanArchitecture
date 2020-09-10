@@ -28,5 +28,12 @@ public class ProductsViewModel: ProductsViewModelType, ProductsViewModelInputs, 
     
     public init(dependencies: ProductsDependencies) {
         self.dependencies = dependencies
+        
+        dependencies.getProducts.execute(product: "product")
+            .subscribe(onNext: { (search) in
+                dump(search)
+            }, onError: { (error) in
+                print(error)
+            }).disposed(by: disposeBag)
     }
 }

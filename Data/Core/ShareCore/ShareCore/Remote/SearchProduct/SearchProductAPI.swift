@@ -27,7 +27,6 @@ extension SearchProductAPI: SearchProductRemoteDataSourceType {
         let request: Observable<NetworkCoreData<SearchProductResponseModel>> = service.request(target: endpoint)
         
         return request.flatMap { (responseModel) -> Observable<SearchProduct> in
-            
             if let search = responseModel.data?.mapToSearch() {
                 return .just(search)
             } else if let searchError = responseModel.getError() {

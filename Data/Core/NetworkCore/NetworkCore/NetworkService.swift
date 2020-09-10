@@ -43,29 +43,15 @@ public struct RequestNetworkProvider: NetworkService {
         
         return Observable.create { observer -> Disposable in
             
-            if target.retry {
-                self.manager
-                    .request(target.toURL(),
-                             method: target.method,
-                             parameters: target.parameters,
-                             encoding: target.encoding,
-                             headers: target.headers,
-                             interceptor: nil)
-                    .validate()
-                    .responseDecodable { (response: DataResponse<T, AFError>) in
-                        self.responseHandler(observer, response: response, target: target)
-                }
-            } else {
-                self.manager
-                    .request(target.toURL(),
-                             method: target.method,
-                             parameters: target.parameters,
-                             encoding: target.encoding,
-                             headers: target.headers,
-                             interceptor: nil)
-                    .responseDecodable { (response: DataResponse<T, AFError>) in
-                        self.responseHandler(observer, response: response, target: target)
-                }
+            self.manager
+                .request(target.toURL(),
+                         method: target.method,
+                         parameters: target.parameters,
+                         encoding: target.encoding,
+                         headers: target.headers,
+                         interceptor: nil)
+                .responseDecodable { (response: DataResponse<T, AFError>) in
+                    self.responseHandler(observer, response: response, target: target)
             }
             
             return Disposables.create()
@@ -94,7 +80,7 @@ public struct RequestNetworkProvider: NetworkService {
             #if DEBUG
             observer.onError(error)
             #else
-            observer.onError(ShareCoreError.unespecified)
+            observer.onError("unespecified")
             #endif
         } else if let value = response.value {
             observer.onNext(value)
@@ -138,7 +124,7 @@ public struct MockNetworkProvider: NetworkService {
                     observer.onNext(decoded)
                     observer.onCompleted()
                 } else {
-                    observer.onError("ShareCoreError.couldNotParseData")
+                    observer.onError("couldNotParseData")
                 }
             }
             

@@ -19,7 +19,7 @@ enum SearchProductEndpoint: NetworkTargetType {
     }
     
     var path: String {
-        return "tienda"
+        return "tienda/"
     }
     
     var method: HTTPMethod {
@@ -27,7 +27,10 @@ enum SearchProductEndpoint: NetworkTargetType {
     }
     
     var sampleData: Data? {
-        return nil
+        let bundle = ShareCoreRemoteDataSource.bundle
+        let sampleData = NetworkCoreSampleData(bundle: bundle)
+        
+        return sampleData.getData(for: "Products")
     }
     
     var parameters: Parameters? {

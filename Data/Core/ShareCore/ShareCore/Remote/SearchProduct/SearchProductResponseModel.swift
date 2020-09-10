@@ -29,6 +29,6 @@ struct InformationResponseModel: Codable {
 
 struct RaitingResponseModel: Codable {
     
-    let ratingValue: Double?
-    let reviewCount: Int?
+    let ratingValue: String?
+    let reviewCount: String?
 }

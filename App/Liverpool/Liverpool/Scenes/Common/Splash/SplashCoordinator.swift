@@ -29,8 +29,10 @@ public struct SplashCoordinator: Coordinator {
 
 extension SplashCoordinator {
     
-    func goToLogin() {
+    func goToProducts() {
         
+        let products = ProductsCoordinator()
+        products.start()
     }
 }
 

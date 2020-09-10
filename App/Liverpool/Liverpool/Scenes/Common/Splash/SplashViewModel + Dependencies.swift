@@ -15,7 +15,7 @@ public protocol SplashViewModelOutputs {
     var isLoading: BehaviorRelay<Bool> { get }
     var error: PublishSubject<Error> { get }
     var update: PublishSubject<Void> { get }
-    var login: PublishSubject<Void> { get }
+    var products: PublishSubject<Void> { get }
 }
 
 public protocol SplashViewModelInputs { }

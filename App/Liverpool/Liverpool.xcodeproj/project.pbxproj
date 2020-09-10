@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B6479A1D2509A1780044CA0C /* ProductsCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6479A152509A1780044CA0C /* ProductsCoordinator.swift */; };
+		B6479A1E2509A1780044CA0C /* ProductsFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6479A162509A1780044CA0C /* ProductsFactory.swift */; };
+		B6479A1F2509A1780044CA0C /* ProductsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6479A172509A1780044CA0C /* ProductsViewController.swift */; };
+		B6479A202509A1780044CA0C /* ProductsComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6479A182509A1780044CA0C /* ProductsComponent.swift */; };
+		B6479A212509A1780044CA0C /* ProductsViewModel+Dependencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6479A192509A1780044CA0C /* ProductsViewModel+Dependencies.swift */; };
+		B6479A222509A1780044CA0C /* ProductsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6479A1A2509A1780044CA0C /* ProductsViewModel.swift */; };
+		B6479A232509A1780044CA0C /* ProductsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B6479A1B2509A1780044CA0C /* ProductsViewController.xib */; };
 		B66C40B625098C7D003DD419 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B66C40B525098C7D003DD419 /* AppDelegate.swift */; };
 		B66C40BF25098C7E003DD419 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B66C40BE25098C7E003DD419 /* Assets.xcassets */; };
 		B66C40C225098C7E003DD419 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B66C40C025098C7E003DD419 /* LaunchScreen.storyboard */; };
@@ -41,6 +48,13 @@
 /* Begin PBXFileReference section */
 		3281F92C35459704C83E8632 /* Pods-Liverpool.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Liverpool.release.xcconfig"; path = "Target Support Files/Pods-Liverpool/Pods-Liverpool.release.xcconfig"; sourceTree = "<group>"; };
 		5935EB63508061AEE7FF0EFB /* Pods-Liverpool.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Liverpool.debug.xcconfig"; path = "Target Support Files/Pods-Liverpool/Pods-Liverpool.debug.xcconfig"; sourceTree = "<group>"; };
+		B6479A152509A1780044CA0C /* ProductsCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsCoordinator.swift; sourceTree = "<group>"; };
+		B6479A162509A1780044CA0C /* ProductsFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsFactory.swift; sourceTree = "<group>"; };
+		B6479A172509A1780044CA0C /* ProductsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsViewController.swift; sourceTree = "<group>"; };
+		B6479A182509A1780044CA0C /* ProductsComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsComponent.swift; sourceTree = "<group>"; };
+		B6479A192509A1780044CA0C /* ProductsViewModel+Dependencies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ProductsViewModel+Dependencies.swift"; sourceTree = "<group>"; };
+		B6479A1A2509A1780044CA0C /* ProductsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsViewModel.swift; sourceTree = "<group>"; };
+		B6479A1B2509A1780044CA0C /* ProductsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProductsViewController.xib; sourceTree = "<group>"; };
 		B66C40B225098C7D003DD419 /* Liverpool.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Liverpool.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B66C40B525098C7D003DD419 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B66C40BE25098C7E003DD419 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -82,6 +96,20 @@
 			path = ../../Pods;
 			sourceTree = "<group>";
 		};
+		B6479A142509A15D0044CA0C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B6479A152509A1780044CA0C /* ProductsCoordinator.swift */,
+				B6479A162509A1780044CA0C /* ProductsFactory.swift */,
+				B6479A172509A1780044CA0C /* ProductsViewController.swift */,
+				B6479A182509A1780044CA0C /* ProductsComponent.swift */,
+				B6479A192509A1780044CA0C /* ProductsViewModel+Dependencies.swift */,
+				B6479A1A2509A1780044CA0C /* ProductsViewModel.swift */,
+				B6479A1B2509A1780044CA0C /* ProductsViewController.xib */,
+			);
+			path = Products;
+			sourceTree = "<group>";
+		};
 		B66C40A925098C7D003DD419 = {
 			isa = PBXGroup;
 			children = (
@@ -118,6 +146,7 @@
 			children = (
 				B6A2C6D22509978800F6FB06 /* Common */,
 				B6A2C6C82509964F00F6FB06 /* Base */,
+				B6479A142509A15D0044CA0C /* Products */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
@@ -240,6 +269,7 @@
 			files = (
 				B66C40C225098C7E003DD419 /* LaunchScreen.storyboard in Resources */,
 				B6A2C6D7250997BD00F6FB06 /* SplashViewController.xib in Resources */,
+				B6479A232509A1780044CA0C /* ProductsViewController.xib in Resources */,
 				B66C40BF25098C7E003DD419 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -296,12 +326,18 @@
 				B6A2C6D6250997BD00F6FB06 /* SplashViewController.swift in Sources */,
 				B6A2C6D9250997D800F6FB06 /* SplashCoordinator.swift in Sources */,
 				B6A2C6F625099C7D00F6FB06 /* APIConfig.swift in Sources */,
+				B6479A222509A1780044CA0C /* ProductsViewModel.swift in Sources */,
 				B6A2C6DD2509988100F6FB06 /* SplashViewModel + Dependencies.swift in Sources */,
+				B6479A1D2509A1780044CA0C /* ProductsCoordinator.swift in Sources */,
+				B6479A1E2509A1780044CA0C /* ProductsFactory.swift in Sources */,
+				B6479A1F2509A1780044CA0C /* ProductsViewController.swift in Sources */,
 				B6A2C6DF250998AD00F6FB06 /* SplashViewModel.swift in Sources */,
 				B6A2C6DB2509984E00F6FB06 /* SplashFactory.swift in Sources */,
 				B6A2C6CA2509965F00F6FB06 /* AppCoordinator.swift in Sources */,
 				B6A2C6F825099CB000F6FB06 /* API.swift in Sources */,
 				B66C40B625098C7D003DD419 /* AppDelegate.swift in Sources */,
+				B6479A202509A1780044CA0C /* ProductsComponent.swift in Sources */,
+				B6479A212509A1780044CA0C /* ProductsViewModel+Dependencies.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

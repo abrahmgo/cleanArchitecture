@@ -35,20 +35,15 @@ class SplashViewController: UIViewController {
     public override func viewDidLoad() {
         super.viewDidLoad()
         
-        setup()
         setupBindings()
-        localize()
-    }
-    
-    private func setup() {
     }
     
     private func setupBindings() {
         
-        viewModel.outputs.login.asObservable().subscribe(onNext: { [weak self] (_) in
-            self?.coordinator.goToLogin()
-        }).disposed(by: disposeBag)
+        viewModel.outputs.products
+            .asObservable()
+            .subscribe(onNext: { [weak self] (_) in
+                self?.coordinator.goToProducts()
+            }).disposed(by: disposeBag)
     }
-    
-    private func localize() { }
 }

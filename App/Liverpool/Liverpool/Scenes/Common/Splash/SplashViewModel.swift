@@ -20,7 +20,7 @@ public class SplashViewModel: SplashViewModelType, SplashViewModelInputs, Splash
     // MARK: Outputs
     public let isLoading = BehaviorRelay<Bool>(value: false)
     public let error = PublishSubject<Error>()
-    public let login = PublishSubject<Void>()
+    public let products = PublishSubject<Void>()
     public let update = PublishSubject<Void>()
     
     // MARK: Private
@@ -29,6 +29,9 @@ public class SplashViewModel: SplashViewModelType, SplashViewModelInputs, Splash
     
     public init(dependencies: SplashDependencies) {
         self.dependencies = dependencies
-        self.login.onNext(())
+        
+        DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
+            self.products.onNext(())
+        }
     }
 }

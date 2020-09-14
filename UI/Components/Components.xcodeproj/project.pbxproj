@@ -10,6 +10,7 @@
 		B61854DE2509C3D700A7BF01 /* ProductCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B61854DC2509C3D700A7BF01 /* ProductCollectionViewCell.swift */; };
 		B61854DF2509C3D700A7BF01 /* ProductCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B61854DD2509C3D700A7BF01 /* ProductCollectionViewCell.xib */; };
 		B61854E82509C80400A7BF01 /* ComponentsConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B61854E72509C80400A7BF01 /* ComponentsConstants.swift */; };
+		B626541B250FBC3A00F2A5C8 /* Utils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B626541A250FBC3A00F2A5C8 /* Utils.framework */; };
 		B66C40D825098CBF003DD419 /* Components.h in Headers */ = {isa = PBXBuildFile; fileRef = B66C40D625098CBF003DD419 /* Components.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B9AEC7D86C525BFEF3EED2BA /* Pods_Components.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53B4BB8D4D59482948D5563E /* Pods_Components.framework */; };
 /* End PBXBuildFile section */
@@ -21,6 +22,7 @@
 		B61854DC2509C3D700A7BF01 /* ProductCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCollectionViewCell.swift; sourceTree = "<group>"; };
 		B61854DD2509C3D700A7BF01 /* ProductCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProductCollectionViewCell.xib; sourceTree = "<group>"; };
 		B61854E72509C80400A7BF01 /* ComponentsConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComponentsConstants.swift; sourceTree = "<group>"; };
+		B626541A250FBC3A00F2A5C8 /* Utils.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Utils.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B66C40D325098CBF003DD419 /* Components.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Components.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B66C40D625098CBF003DD419 /* Components.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Components.h; sourceTree = "<group>"; };
 		B66C40D725098CBF003DD419 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -31,6 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B626541B250FBC3A00F2A5C8 /* Utils.framework in Frameworks */,
 				B9AEC7D86C525BFEF3EED2BA /* Pods_Components.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -41,6 +44,7 @@
 		325F7C4A98D6C018D98F7940 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				B626541A250FBC3A00F2A5C8 /* Utils.framework */,
 				53B4BB8D4D59482948D5563E /* Pods_Components.framework */,
 			);
 			name = Frameworks;

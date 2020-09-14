@@ -8,12 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		912FE5EDDE436350181EC414 /* Pods_CoreUseCases.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D360764E0D8EC4248CDFAEB5 /* Pods_CoreUseCases.framework */; };
+		B626541F250FBC5600F2A5C8 /* CoreDataSource.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B626541E250FBC5600F2A5C8 /* CoreDataSource.framework */; };
 		B642A0882509B3E5002B88F1 /* GetSearchProductsUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = B642A0872509B3E5002B88F1 /* GetSearchProductsUseCase.swift */; };
 		B66C40A325098C2E003DD419 /* CoreUseCases.h in Headers */ = {isa = PBXBuildFile; fileRef = B66C40A125098C2E003DD419 /* CoreUseCases.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		8875BD5DDD008F4BC11976EF /* Pods-CoreUseCases.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoreUseCases.release.xcconfig"; path = "Target Support Files/Pods-CoreUseCases/Pods-CoreUseCases.release.xcconfig"; sourceTree = "<group>"; };
+		B626541E250FBC5600F2A5C8 /* CoreDataSource.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = CoreDataSource.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B642A0872509B3E5002B88F1 /* GetSearchProductsUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetSearchProductsUseCase.swift; sourceTree = "<group>"; };
 		B66C409E25098C2E003DD419 /* CoreUseCases.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CoreUseCases.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B66C40A125098C2E003DD419 /* CoreUseCases.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CoreUseCases.h; sourceTree = "<group>"; };
@@ -27,6 +29,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B626541F250FBC5600F2A5C8 /* CoreDataSource.framework in Frameworks */,
 				912FE5EDDE436350181EC414 /* Pods_CoreUseCases.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -37,6 +40,7 @@
 		7E2582E74C7AB7CC7EF93056 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				B626541E250FBC5600F2A5C8 /* CoreDataSource.framework */,
 				D360764E0D8EC4248CDFAEB5 /* Pods_CoreUseCases.framework */,
 			);
 			name = Frameworks;

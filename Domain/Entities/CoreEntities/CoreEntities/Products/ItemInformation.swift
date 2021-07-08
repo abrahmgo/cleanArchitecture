@@ -8,7 +8,7 @@
 
 import Foundation
 
-public class ItemInformation {
+public struct ItemInformation: Hashable {
     
     public let name: String
     public let url: URL?

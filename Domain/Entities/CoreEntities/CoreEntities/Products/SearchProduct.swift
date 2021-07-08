@@ -8,8 +8,8 @@
 
 import Foundation
 
-public class SearchProduct {
-    
+public struct SearchProduct: Hashable {
+
     public let numberOfItems: Int
     public let itemListElement: [Item]
     

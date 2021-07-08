@@ -8,7 +8,7 @@
 
 import Foundation
 
-public class ItemRaiting {
+public struct ItemRaiting: Hashable {
 
     public let ratingValue: Double
     public let reviewCount: Int

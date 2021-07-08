@@ -8,7 +8,7 @@
 
 import Foundation
 
-public struct ScaleRating {
+public struct ScaleRating: Hashable {
 
     public let scale: Double
     

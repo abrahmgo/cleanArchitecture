@@ -15,12 +15,9 @@ public class ProductsViewController: UIViewController {
     
     @IBOutlet weak var collectionView: UICollectionView! {
         didSet {
-            let customFlowLayout = FlowLayout()
-            customFlowLayout.estimatedItemSize = UICollectionViewFlowLayout.automaticSize
-            customFlowLayout.minimumLineSpacing = 0
-
+            
             collectionView.register(cellType: ProductCollectionViewCell.self, bundle: ComponentsConstants.bundle)
-            collectionView.collectionViewLayout = customFlowLayout
+            collectionView.collectionViewLayout = createCollectionViewLayout()
             collectionView.dataSource = self
             collectionView.delegate = self
         }
@@ -70,6 +67,25 @@ public class ProductsViewController: UIViewController {
     }
     
     private func localize() { }
+    
+    private func createCollectionViewLayout() -> UICollectionViewLayout {
+        // Define Item Size
+        let itemSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1.0), heightDimension: .estimated(200.0))
+
+        // Create Item
+        let item = NSCollectionLayoutItem(layoutSize: itemSize)
+
+        // Define Group Size
+        let groupSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1.0), heightDimension: .estimated(200.0))
+
+        // Create Group
+        let group = NSCollectionLayoutGroup.vertical(layoutSize: groupSize, subitems: [ item ])
+
+        // Create Section
+        let section = NSCollectionLayoutSection(group: group)
+
+        return UICollectionViewCompositionalLayout(section: section)
+    }
 }
 
 // MARK: - UICollectionViewDataSource
